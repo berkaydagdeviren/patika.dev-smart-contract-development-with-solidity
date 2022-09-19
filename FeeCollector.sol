@@ -10,7 +10,7 @@ contract FeeCollector {
         owner = msg.sender;
     }
 
-     function recieve() payable external {
+     receive() payable external {
         balance += msg.value;
     }
 
